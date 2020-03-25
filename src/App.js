@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import Wheel from './components/Wheel'
 
 const App = () => {
-  return <HelloWorld />
+  return <Wheel />
 }
 
 export default App
