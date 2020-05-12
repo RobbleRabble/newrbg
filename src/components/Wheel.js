@@ -39,6 +39,7 @@ const Wheel = (props) => {
 
   return (
     <>
+      <h1>A color picker to Hues!</h1>
       <section class="container">
         <div class="slider">
           Hue
@@ -77,26 +78,30 @@ const Wheel = (props) => {
             id="light"
             // onClick={this.changeLight}
           ></input>
-          <div
-            className="selected"
-            style={{
-              backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`,
-            }}
-          >
-            <h2 className="Display-Text">
-              hsl({hue},{saturation}%,
-              {lightness}%)
-            </h2>
-          </div>
-          {/* <div style={{
+        </div>
+      </section>
+
+      <div
+        className="selected"
+        style={{
+          backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`,
+        }}
+      >
+        <h2 className="Display-Text">
+          hsl({hue},{saturation}%,
+          {lightness}%)
+        </h2>
+      </div>
+      {/* <div style={{
               text: 'my text',
             }}
             </div> */}
-        </div>
+
+      <div>
         <button className="random" onClick={random}>
           Try a random!
         </button>
-      </section>
+      </div>
     </>
   )
 }
